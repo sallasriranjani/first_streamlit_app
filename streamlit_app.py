@@ -38,7 +38,8 @@ try:
         streamlit.dataframe(back_from_function)
 except URLError as e:
     streamlit.error()
-streamlit.header("The fruit load list contains:|") AFTER
+    
+streamlit.header("The fruit load list contains:")
  #Snowflake-related functions
  def get_fruit_load_list():
      with my_cnx.cursor() as my_cur:
